@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega atividade 74</title>
+</head>
+<body>
+    <h1>Multiplication Table</h1>
+
+    <script>
+        function MultTable(n) {
+            let tabela  = []
+        
+            for (let y = 0; y <= n; y++) {
+                tabela[y] = []
+
+                for (let x = 0; x <= n; x++) {
+                    tabela[y][x] = x * y
+                }
+            }
+            return tabela
+        }
+        console.table(MultTable(10))
+    </script>
+</body>
+</html>
